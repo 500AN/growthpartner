@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Growth Partner  </title>
+    <meta name="description" content="Comprehensive business consulting services including travel industry training, representation services, sales assistance, and outsourced solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styles for services page */
+        .services-overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-benefits {
+            background: var(--light-bg);
+            padding: 5rem 0;
+        }
+        
+        .service-faqs {
+            background: var(--white);
+            padding: 5rem 0;
+        }
+        
+        .faqs-list {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--light-bg);
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #f1f5f9;
+        }
+        
+        .faq-question h4 {
+            margin: 0;
+            color: var(--primary-color);
+        }
+        
+        .faq-toggle {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            display: none;
+            background: var(--white);
+        }
+        
+        .faq-answer p {
+            padding: 1.5rem 0;
+            margin: 0;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .overview-highlights ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .overview-highlights li {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-light);
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .service-tiers-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header .text-gold {
+            color: var(--accent-color);
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+
+        .tiers-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .tier-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow-medium);
+            transition: all 0.3s ease;
+            border: 2px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tier-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            border-color: var(--accent-color);
+        }
+
+        .tier-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .tier-card.platinum .tier-badge {
+            color: #8b5cf6;
+        }
+
+        .tier-card.gold .tier-badge {
+            color: #f59e0b;
+        }
+
+        .tier-card.silver .tier-badge {
+            color: #64748b;
+        }
+
+        .tier-subtitle {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .tier-ideal {
+            font-size: 0.85rem;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 1.2rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .tier-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .tier-features li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.85rem;
+            color: var(--text-color);
+            line-height: 1.5;
+        }
+
+        .tier-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .tier-outcome {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2d4a73 100%);
+            padding: 1rem;
+            border-radius: 12px;
+            margin-top: auto;
+        }
+
+        .tier-outcome-label {
+            color: var(--accent-color);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+
+        .tier-outcome-text {
+            color: #ffffff;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 968px) {
+            .tiers-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .tier-card {
+            animation: slideUp 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        .tier-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .tier-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .tier-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        /* .hero-description {
+            margin-top: 2rem;
+        }
+        
+        .hero-description p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+        } */
+    </style>
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Growth Partner </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Service Hero Section (Dynamic) -->
+     <section class="service-hero">
+        <div class="container">
+            <h1 class="fade-in">Our Professional <span class="text-gold">Services</span></h1>
+            <p class="fade-in">Discover our range of specialized consulting and management services designed to transform your business operations and accelerate growth.</p>
+            <div class="hero-description fade-in">
+                <p>Comprehensive business solutions tailored to drive your success</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview (Default) -->
+    <section class="service-tiers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="text-gold">Growth Programs</span></h2>
+                <p>Structured pathways to transform your travel business</p>
+            </div>
+
+            <div class="tiers-grid">
+                <!-- Platinum -->
+                <div class="tier-card platinum">
+                    <div class="tier-badge">🌟 Platinum</div>
+                    <div class="tier-subtitle">Full Growth Leadership</div>
+                    <div class="tier-ideal">For new or scaling businesses seeking expert-led transformation</div>
+                    
+                    <ul class="tier-features">
+                        <li>First-Year Business Plan with clear milestones</li>
+                        <li>Target Achievement Strategy & frameworks</li>
+                        <li>Lead Generation through digital + partner channels</li>
+                        <li>Product Development & pricing strategy</li>
+                        <li>Website Content & SEO guidance</li>
+                        <li>Vendor Contracting support</li>
+                        <li>Staff Training & Skill Development</li>
+                        <li>Bi-monthly Business Reviews (4 hrs each)</li>
+                    </ul>
+
+                    <div class="tier-outcome">
+                        <div class="tier-outcome-label">What You Get</div>
+                        <p class="tier-outcome-text">A fully structured business built to scale with ongoing expert guidance</p>
+                    </div>
+                </div>
+
+                <!-- Gold -->
+                <div class="tier-card gold">
+                    <div class="tier-badge">🏅 Gold</div>
+                    <div class="tier-subtitle">Accelerate & Scale</div>
+                    <div class="tier-ideal">For established enterprises ready to expand and diversify</div>
+                    
+                    <ul class="tier-features">
+                        <li>New Product Lines & Service Verticals</li>
+                        <li>Business Scaling Strategy</li>
+                        <li>Revenue Growth Plan (1.5× target)</li>
+                        <li>50% growth from new verticals</li>
+                        <li>Team Upskilling & Advanced Training</li>
+                        <li>Sales, digital & operations excellence</li>
+                    </ul>
+
+                    <div class="tier-outcome">
+                        <div class="tier-outcome-label">What You Get</div>
+                        <p class="tier-outcome-text">Stronger portfolio, diversified revenue, and confident expansion</p>
+                    </div>
+                </div>
+
+                <!-- Silver -->
+                <div class="tier-card silver">
+                    <div class="tier-badge">💼 Silver</div>
+                    <div class="tier-subtitle">Sales & Destination Excellence</div>
+                    <div class="tier-ideal">For teams needing sharper skills and destination expertise</div>
+                    
+                    <ul class="tier-features">
+                        <li>Professional Selling Skills Training</li>
+                        <li>New & Emerging Destinations mastery</li>
+                        <li>Positioning & itinerary development</li>
+                        <li>Pricing strategies</li>
+                        <li>Objection-handling techniques</li>
+                    </ul>
+
+                    <div class="tier-outcome">
+                        <div class="tier-outcome-label">What You Get</div>
+                        <p class="tier-outcome-text">Confident teams who convert more enquiries into bookings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- All Services Overview (When no specific service is selected) -->
+    <section class="all-services-overview section"  style="background: var(--light-bg);">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-in">Why Choose Our Services?</h2>
+                <p class="fade-in">The advantages that set our consulting solutions apart</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item slide-in-left">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Tailored Solutions</h3>
+                    <p>Every service is customized to meet your specific business needs, industry requirements, and strategic objectives.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Proven Expertise</h3>
+                    <p>Our team brings years of industry experience and a track record of successful client partnerships across various sectors.</p>
+                </div>
+                <div class="feature-item slide-in-right">
+                    <div class="feature-icon">📈</div>
+                    <h3>Measurable Results</h3>
+                    <p>We focus on delivering tangible outcomes that directly impact your business performance and growth metrics.</p>
+                </div>
+                <div class="feature-item slide-in-left">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Partnership Approach</h3>
+                    <p>We work as your trusted partner, committed to your long-term success and sustainable business development.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">💡</div>
+                    <h3>Innovation Focus</h3>
+                    <p>Stay ahead with cutting-edge strategies, latest technologies, and innovative approaches to business challenges.</p>
+                </div>
+                <div class="feature-item slide-in-right">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rapid Implementation</h3>
+                    <p>Our streamlined processes ensure quick deployment and faster time-to-value for all our service offerings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="industries-served section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-in">Industries We Serve</h2>
+                <p class="fade-in">Specialized expertise across diverse business sectors</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-item scale-in">
+                    <h4>Travel & Tourism</h4>
+                    <p>Comprehensive training and consulting for travel agencies, tour operators, and hospitality businesses.</p>
+                </div>
+                <div class="industry-item scale-in">
+                    <h4>Hospitality</h4>
+                    <p>Strategic solutions for hotels, resorts, restaurants, and accommodation service providers.</p>
+                </div>
+                <div class="industry-item scale-in">
+                    <h4>Retail & E-commerce</h4>
+                    <p>Sales optimization, customer engagement, and digital transformation strategies for retail businesses.</p>
+                </div>
+                <div class="industry-item scale-in">
+                    <h4>Professional Services</h4>
+                    <p>Business development and operational excellence consulting for service-based companies.</p>
+                </div>
+                <div class="industry-item scale-in">
+                    <h4>Technology</h4>
+                    <p>Growth strategies, market expansion, and sales acceleration support for tech companies and startups.</p>
+                </div>
+                <div class="industry-item scale-in">
+                    <h4>Healthcare</h4>
+                    <p>Specialized consulting for healthcare providers, medical practices, and health service organizations.</p>
+                </div>
+                <div class="industry-item scale-in">
+                    <h4>Financial Services</h4>
+                    <p>Compliance, process optimization, and customer experience enhancement for financial institutions.</p>
+                </div>
+                <div class="industry-item scale-in">
+                    <h4>Manufacturing</h4>
+                    <p>Operational efficiency, supply chain optimization, and market expansion strategies for manufacturers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Methodology -->
+    <section class="service-methodology section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-in">Our Service Methodology</h2>
+                <p class="fade-in">A systematic approach to delivering exceptional results</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-item fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Discovery & Analysis</h3>
+                    <p>Comprehensive assessment of your current situation, challenges, and opportunities to understand your unique needs.</p>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Strategy Development</h3>
+                    <p>Creation of customized strategies and solutions aligned with your business objectives and market conditions.</p>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Implementation</h3>
+                    <p>Systematic execution of recommended solutions with hands-on support and guidance throughout the process.</p>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Monitoring & Optimization</h3>
+                    <p>Continuous monitoring of results and ongoing optimization to ensure sustained success and maximum ROI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta section">
+        <div class="container text-center">
+            <h2 class="fade-in">Ready to Get Started?</h2>
+            <p class="fade-in">Let's discuss which service is right for your business and how we can help you achieve your goals</p>
+            <div class="fade-in">
+                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+                <a href="tel:+919876543210" class="btn btn-outline">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Growth Partner  </h3>
+                    <p>Guiding businesses toward smarter growth with comprehensive consulting and management solutions.</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Location:</strong> Cochin, India<br>
+                        <strong>Email:</strong> info@letguideu.com<br>
+                        <strong>Phone:</strong> +91 98765 43210
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html?service=travel-industry-training">Travel Industry Training</a></li>
+                        <li><a href="services.html?service=representation-company">Representation Company</a></li>
+                        <li><a href="services.html?service=sales-assistance">Sales Assistance</a></li>
+                        <li><a href="services.html?service=outsourced-sales-tasks">Outsourced Sales Tasks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Ready to start your business transformation journey?</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn btn-accent">Get In Touch</a>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <button onclick="openWhatsApp()" class="btn btn-primary">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Growth Partner  . All rights reserved. | Designed for business excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
