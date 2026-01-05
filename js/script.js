@@ -790,7 +790,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ===== WHATSAPP INTEGRATION =====
 function openWhatsApp() {
-    const phoneNumber = '+919876543210'; // Replace with actual WhatsApp number
+    const phoneNumber = '+919744762888'; // Replace with actual WhatsApp number
     const message = 'Hello! I would like to know more about your services.';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
