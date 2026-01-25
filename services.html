@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Growth Partner  </title>
-    <meta name="description" content="Comprehensive business consulting services including travel industry training, representation services, sales assistance, and outsourced solutions.">
+    <title>Services - Growth Partner </title>
+    <meta name="description"
+        content="Comprehensive business consulting services including travel industry training, representation services, sales assistance, and outsourced solutions.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <style>
         /* Additional styles for services page */
         .services-overview-grid {
@@ -17,22 +26,22 @@
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .service-benefits {
             background: var(--light-bg);
             padding: 5rem 0;
         }
-        
+
         .service-faqs {
             background: var(--white);
             padding: 5rem 0;
         }
-        
+
         .faqs-list {
             max-width: 800px;
             margin: 3rem auto 0;
         }
-        
+
         .faq-item {
             background: var(--white);
             border: 1px solid #e2e8f0;
@@ -41,7 +50,7 @@
             overflow: hidden;
             box-shadow: var(--shadow-light);
         }
-        
+
         .faq-question {
             padding: 1.5rem;
             cursor: pointer;
@@ -51,35 +60,35 @@
             background: var(--light-bg);
             transition: background 0.3s ease;
         }
-        
+
         .faq-question:hover {
             background: #f1f5f9;
         }
-        
+
         .faq-question h4 {
             margin: 0;
             color: var(--primary-color);
         }
-        
+
         .faq-toggle {
             font-size: 1.5rem;
             font-weight: bold;
             color: var(--accent-color);
             transition: transform 0.3s ease;
         }
-        
+
         .faq-answer {
             padding: 0 1.5rem;
             display: none;
             background: var(--white);
         }
-        
+
         .faq-answer p {
             padding: 1.5rem 0;
             margin: 0;
             border-top: 1px solid #e2e8f0;
         }
-        
+
         .overview-highlights ul {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -88,7 +97,7 @@
             padding: 0;
             list-style: none;
         }
-        
+
         .overview-highlights li {
             background: var(--white);
             padding: 1rem;
@@ -143,7 +152,7 @@
 
         .tier-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
             border-color: var(--accent-color);
         }
 
@@ -247,6 +256,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -269,7 +279,7 @@
         .tier-card:nth-child(3) {
             animation-delay: 0.3s;
         }
-        
+
         /* .hero-description {
             margin-top: 2rem;
         }
@@ -280,6 +290,7 @@
         } */
     </style>
 </head>
+
 <body>
     <!-- Page Loader -->
     <div class="page-loader">
@@ -289,7 +300,10 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
-            <a href="index.html" class="logo">Growth Partner </a>
+            <a href="index.html" class="logo">
+                <img src="images/logo_180 x60.png" alt="Growth Partner" class="logo-img">
+                <!-- <span class="logo-text">Growth Partner</span> -->
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -305,10 +319,11 @@
     </header>
 
     <!-- Service Hero Section (Dynamic) -->
-     <section class="service-hero">
+    <section class="service-hero">
         <div class="container">
             <h1 class="fade-in">Our Professional <span class="text-gold">Services</span></h1>
-            <p class="fade-in">Discover our range of specialized consulting and management services designed to transform your business operations and accelerate growth.</p>
+            <p class="fade-in">Discover our range of specialized consulting and management services designed to
+                transform your business operations and accelerate growth.</p>
             <div class="hero-description fade-in">
                 <p>Comprehensive business solutions tailored to drive your success</p>
             </div>
@@ -329,7 +344,7 @@
                     <div class="tier-badge">🌟 Platinum</div>
                     <div class="tier-subtitle">Full Growth Leadership</div>
                     <div class="tier-ideal">For new or scaling businesses seeking expert-led transformation</div>
-                    
+
                     <ul class="tier-features">
                         <li>First-Year Business Plan with clear milestones</li>
                         <li>Target Achievement Strategy & frameworks</li>
@@ -343,7 +358,8 @@
 
                     <div class="tier-outcome">
                         <div class="tier-outcome-label">What You Get</div>
-                        <p class="tier-outcome-text">A fully structured business built to scale with ongoing expert guidance</p>
+                        <p class="tier-outcome-text">A fully structured business built to scale with ongoing expert
+                            guidance</p>
                     </div>
                 </div>
 
@@ -352,7 +368,7 @@
                     <div class="tier-badge">🏅 Gold</div>
                     <div class="tier-subtitle">Accelerate & Scale</div>
                     <div class="tier-ideal">For established enterprises ready to expand and diversify</div>
-                    
+
                     <ul class="tier-features">
                         <li>New Product Lines & Service Verticals</li>
                         <li>Business Scaling Strategy</li>
@@ -364,7 +380,8 @@
 
                     <div class="tier-outcome">
                         <div class="tier-outcome-label">What You Get</div>
-                        <p class="tier-outcome-text">Stronger portfolio, diversified revenue, and confident expansion</p>
+                        <p class="tier-outcome-text">Stronger portfolio, diversified revenue, and confident expansion
+                        </p>
                     </div>
                 </div>
 
@@ -373,7 +390,7 @@
                     <div class="tier-badge">💼 Silver</div>
                     <div class="tier-subtitle">Sales & Destination Excellence</div>
                     <div class="tier-ideal">For teams needing sharper skills and destination expertise</div>
-                    
+
                     <ul class="tier-features">
                         <li>Professional Selling Skills Training</li>
                         <li>New & Emerging Destinations mastery</li>
@@ -385,6 +402,69 @@
                     <div class="tier-outcome">
                         <div class="tier-outcome-label">What You Get</div>
                         <p class="tier-outcome-text">Confident teams who convert more enquiries into bookings</p>
+                    </div>
+                </div>
+
+                <!-- CRM Strategy -->
+                <div class="tier-card">
+                    <div class="tier-badge">⚙️ CRM Strategy & Implementation</div>
+                    <div class="tier-ideal">We help organizations move from fragmented data to a single source of truth.
+                    </div>
+
+                    <ul class="tier-features">
+                        <li>CRM selection & customization (Sales, Support, Operations)</li>
+                        <li>Lead capture, routing & qualification workflows</li>
+                        <li>Sales pipeline structuring & automation</li>
+                        <li>Follow-up, reminders & task automation</li>
+                        <li>Integration with website, WhatsApp, email & call systems</li>
+                        <li>Reporting dashboards for conversion, performance & ROI</li>
+                    </ul>
+
+                    <div class="tier-outcome">
+                        <div class="tier-outcome-label">What to Expect</div>
+                        <p class="tier-outcome-text">Faster lead response, Higher conversion rates, Better team
+                            accountability, Data-driven decision-making</p>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="tier-card">
+                    <div class="tier-badge">🚀 Digital Marketing Transformation</div>
+                    <div class="tier-ideal">We shift marketing from visibility-focused to revenue-focused.</div>
+
+                    <ul class="tier-features">
+                        <li>Digital marketing audit (website, ads, SEO, social)</li>
+                        <li>Funnel design: Awareness → Consideration → Conversion</li>
+                        <li>Paid ads strategy (Google, Meta, performance campaigns)</li>
+                        <li>Content & messaging aligned with customer psychology</li>
+                        <li>Retargeting & lead nurturing automation</li>
+                        <li>Campaign tracking & ROI measurement</li>
+                    </ul>
+
+                    <div class="tier-outcome">
+                        <div class="tier-outcome-label">What You Get</div>
+                        <p class="tier-outcome-text">Qualified leads not just traffic, Reduced CPL, Strong brand trust,
+                            Predictable lead flow</p>
+                    </div>
+                </div>
+
+                <!-- Alignment -->
+                <div class="tier-card">
+                    <div class="tier-badge">🔗 Sales & Marketing Alignment</div>
+                    <div class="tier-ideal">Technology works only when people and processes are aligned.</div>
+
+                    <ul class="tier-features">
+                        <li>CRM-driven sales scripts & follow-up frameworks</li>
+                        <li>Lead scoring & prioritization logic</li>
+                        <li>Call audits & conversion optimization</li>
+                        <li>Marketing-to-sales handover SOPs</li>
+                        <li>Training teams to use digital tools effectively</li>
+                    </ul>
+
+                    <div class="tier-outcome">
+                        <div class="tier-outcome-label">What You Get</div>
+                        <p class="tier-outcome-text">Zero lead leakage, Faster closures, Improved customer experience,
+                            Scalable growth systems</p>
                     </div>
                 </div>
             </div>
@@ -404,8 +484,9 @@
                 <div class="tier-card">
                     <div class="tier-badge">🎯 Career Guidance</div>
                     <div class="tier-subtitle">Tourism & Hospitality</div>
-                    <div class="tier-ideal">Build a career, not just a job. Discover the right path and prepare with confidence.</div>
-                    
+                    <div class="tier-ideal">Build a career, not just a job. Discover the right path and prepare with
+                        confidence.</div>
+
                     <ul class="tier-features">
                         <li>Career path mapping</li>
                         <li>Resume & interview coaching</li>
@@ -415,7 +496,8 @@
 
                     <div class="tier-outcome">
                         <div class="tier-outcome-label">What You Get</div>
-                        <p class="tier-outcome-text">A clear roadmap to launch your career with confidence and purpose</p>
+                        <p class="tier-outcome-text">A clear roadmap to launch your career with confidence and purpose
+                        </p>
                     </div>
                 </div>
 
@@ -424,7 +506,7 @@
                     <div class="tier-badge">🚀 Entrepreneur Support</div>
                     <div class="tier-subtitle">Start Your Travel Business</div>
                     <div class="tier-ideal">Turn your idea into a structured, scalable travel business.</div>
-                    
+
                     <ul class="tier-features">
                         <li>Business setup roadmap</li>
                         <li>Product development & packaging</li>
@@ -442,8 +524,9 @@
                 <div class="tier-card">
                     <div class="tier-badge">🌱 Personal Growth</div>
                     <div class="tier-subtitle">Leadership Coaching</div>
-                    <div class="tier-ideal">Success begins within. Develop discipline, mindset, and leadership qualities that last.</div>
-                    
+                    <div class="tier-ideal">Success begins within. Develop discipline, mindset, and leadership qualities
+                        that last.</div>
+
                     <ul class="tier-features">
                         <li>Goal setting & productivity</li>
                         <li>Communication & presentation skills</li>
@@ -462,7 +545,7 @@
                     <div class="tier-badge">✈️ Travel Consulting</div>
                     <div class="tier-subtitle">Personalized Holiday Planning</div>
                     <div class="tier-ideal">Travel better, smarter, and stress-free with unbiased guidance.</div>
-                    
+
                     <ul class="tier-features">
                         <li>Destination & itinerary planning</li>
                         <li>Budget optimization</li>
@@ -481,7 +564,7 @@
                     <div class="tier-badge">📚 Skill Development</div>
                     <div class="tier-subtitle">Professional Workshops</div>
                     <div class="tier-ideal">Short, impactful programs designed for real-life use.</div>
-                    
+
                     <ul class="tier-features">
                         <li>Customer service excellence</li>
                         <li>Sales foundations</li>
@@ -491,7 +574,8 @@
 
                     <div class="tier-outcome">
                         <div class="tier-outcome-label">What You Get</div>
-                        <p class="tier-outcome-text">Upgrade your skills at your pace with practical, actionable training</p>
+                        <p class="tier-outcome-text">Upgrade your skills at your pace with practical, actionable
+                            training</p>
                     </div>
                 </div>
 
@@ -500,7 +584,7 @@
                     <div class="tier-badge">🔄 Career Transition</div>
                     <div class="tier-subtitle">Restart with Confidence</div>
                     <div class="tier-ideal">For those restarting or shifting careers with confidence and clarity.</div>
-                    
+
                     <ul class="tier-features">
                         <li>Skill refresh</li>
                         <li>Role transition strategy</li>
@@ -519,7 +603,7 @@
                     <div class="tier-badge">💡 Personal Branding</div>
                     <div class="tier-subtitle">Purpose, Mindset & Identity</div>
                     <div class="tier-ideal">Find clarity. Express your value. Build a voice that carries trust.</div>
-                    
+
                     <ul class="tier-features">
                         <li>Personal brand identity</li>
                         <li>LinkedIn & digital presence</li>
@@ -538,7 +622,7 @@
 
 
     <!-- All Services Overview (When no specific service is selected) -->
-    <section class="all-services-overview section"  style="background: var(--light-bg);">
+    <section class="all-services-overview section" style="background: var(--light-bg);">
         <div class="container">
             <div class="text-center">
                 <h2 class="fade-in">Why Choose Our Services?</h2>
@@ -548,32 +632,38 @@
                 <div class="feature-item slide-in-left">
                     <div class="feature-icon">🎯</div>
                     <h3>Tailored Solutions</h3>
-                    <p>Every service is customized to meet your specific business needs, industry requirements, and strategic objectives.</p>
+                    <p>Every service is customized to meet your specific business needs, industry requirements, and
+                        strategic objectives.</p>
                 </div>
                 <div class="feature-item fade-in">
                     <div class="feature-icon">🏆</div>
                     <h3>Proven Expertise</h3>
-                    <p>Our team brings years of industry experience and a track record of successful client partnerships across various sectors.</p>
+                    <p>Our team brings years of industry experience and a track record of successful client partnerships
+                        across various sectors.</p>
                 </div>
                 <div class="feature-item slide-in-right">
                     <div class="feature-icon">📈</div>
                     <h3>Measurable Results</h3>
-                    <p>We focus on delivering tangible outcomes that directly impact your business performance and growth metrics.</p>
+                    <p>We focus on delivering tangible outcomes that directly impact your business performance and
+                        growth metrics.</p>
                 </div>
                 <div class="feature-item slide-in-left">
                     <div class="feature-icon">🤝</div>
                     <h3>Partnership Approach</h3>
-                    <p>We work as your trusted partner, committed to your long-term success and sustainable business development.</p>
+                    <p>We work as your trusted partner, committed to your long-term success and sustainable business
+                        development.</p>
                 </div>
                 <div class="feature-item fade-in">
                     <div class="feature-icon">💡</div>
                     <h3>Innovation Focus</h3>
-                    <p>Stay ahead with cutting-edge strategies, latest technologies, and innovative approaches to business challenges.</p>
+                    <p>Stay ahead with cutting-edge strategies, latest technologies, and innovative approaches to
+                        business challenges.</p>
                 </div>
                 <div class="feature-item slide-in-right">
                     <div class="feature-icon">⚡</div>
                     <h3>Rapid Implementation</h3>
-                    <p>Our streamlined processes ensure quick deployment and faster time-to-value for all our service offerings.</p>
+                    <p>Our streamlined processes ensure quick deployment and faster time-to-value for all our service
+                        offerings.</p>
                 </div>
             </div>
         </div>
@@ -589,7 +679,8 @@
             <div class="industries-grid">
                 <div class="industry-item scale-in">
                     <h4>Travel & Tourism</h4>
-                    <p>Comprehensive training and consulting for travel agencies, tour operators, and hospitality businesses.</p>
+                    <p>Comprehensive training and consulting for travel agencies, tour operators, and hospitality
+                        businesses.</p>
                 </div>
                 <div class="industry-item scale-in">
                     <h4>Hospitality</h4>
@@ -597,28 +688,29 @@
                 </div>
                 <div class="industry-item scale-in">
                     <h4>Retail & E-commerce</h4>
-                    <p>Sales optimization, customer engagement, and digital transformation strategies for retail businesses.</p>
+                    <p>Sales optimization, customer engagement, and digital transformation strategies for retail
+                        businesses.</p>
                 </div>
                 <div class="industry-item scale-in">
                     <h4>Professional Services</h4>
                     <p>Business development and operational excellence consulting for service-based companies.</p>
                 </div>
-                <div class="industry-item scale-in">
+                <!-- <div class="industry-item scale-in">
                     <h4>Technology</h4>
                     <p>Growth strategies, market expansion, and sales acceleration support for tech companies and startups.</p>
-                </div>
-                <div class="industry-item scale-in">
+                </div> -->
+                <!-- <div class="industry-item scale-in">
                     <h4>Healthcare</h4>
                     <p>Specialized consulting for healthcare providers, medical practices, and health service organizations.</p>
-                </div>
-                <div class="industry-item scale-in">
+                </div> -->
+                <!-- <div class="industry-item scale-in">
                     <h4>Financial Services</h4>
                     <p>Compliance, process optimization, and customer experience enhancement for financial institutions.</p>
                 </div>
                 <div class="industry-item scale-in">
                     <h4>Manufacturing</h4>
                     <p>Operational efficiency, supply chain optimization, and market expansion strategies for manufacturers.</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -634,22 +726,26 @@
                 <div class="step-item fade-in">
                     <div class="step-number">1</div>
                     <h3>Discovery & Analysis</h3>
-                    <p>Comprehensive assessment of your current situation, challenges, and opportunities to understand your unique needs.</p>
+                    <p>Comprehensive assessment of your current situation, challenges, and opportunities to understand
+                        your unique needs.</p>
                 </div>
                 <div class="step-item fade-in">
                     <div class="step-number">2</div>
                     <h3>Strategy Development</h3>
-                    <p>Creation of customized strategies and solutions aligned with your business objectives and market conditions.</p>
+                    <p>Creation of customized strategies and solutions aligned with your business objectives and market
+                        conditions.</p>
                 </div>
                 <div class="step-item fade-in">
                     <div class="step-number">3</div>
                     <h3>Implementation</h3>
-                    <p>Systematic execution of recommended solutions with hands-on support and guidance throughout the process.</p>
+                    <p>Systematic execution of recommended solutions with hands-on support and guidance throughout the
+                        process.</p>
                 </div>
                 <div class="step-item fade-in">
                     <div class="step-number">4</div>
                     <h3>Monitoring & Optimization</h3>
-                    <p>Continuous monitoring of results and ongoing optimization to ensure sustained success and maximum ROI.</p>
+                    <p>Continuous monitoring of results and ongoing optimization to ensure sustained success and maximum
+                        ROI.</p>
                 </div>
             </div>
         </div>
@@ -659,7 +755,8 @@
     <section class="contact-cta section">
         <div class="container text-center">
             <h2 class="fade-in">Ready to Get Started?</h2>
-            <p class="fade-in">Let's discuss which service is right for your business and how we can help you achieve your goals</p>
+            <p class="fade-in" style="color: white;">Let's discuss which service is right for your business and how we
+                can help you achieve your goals</p>
             <div class="fade-in">
                 <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
                 <a href="tel:+919744762888" class="btn btn-outline">Call Now</a>
@@ -672,8 +769,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Growth Partner  </h3>
-                    <p>Guiding businesses toward smarter growth with comprehensive consulting and management solutions.</p>
+                    <h3>Growth Partner </h3>
+                    <p>Guiding businesses toward smarter growth with comprehensive consulting and management solutions.
+                    </p>
                     <div style="margin-top: 1rem;">
                         <strong>Location:</strong> A-103,Confident Pride,Vattekunnam, Edappally PO ,Pin 682024<br>
                         <strong>Email:</strong> info@growthpartnerexperts.com<br>
@@ -710,11 +808,159 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Growth Partner  . All rights reserved. | Designed for business excellence.</p>
+                <p>© 2026 Growth Partner . All rights reserved. | Designed for business excellence.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919744762888" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path fill="currentColor"
+                d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.253 1.407 1.42-5.278-0.322-0.532c-1.344-2.225-2.068-4.791-2.068-7.435 0-7.722 6.278-14 14-14s14 6.278 14 14-6.278 14-14 14zM23.187 19.625c-0.218-0.109-1.292-0.638-1.492-0.711s-0.346-0.109-0.491 0.109c-0.146 0.218-0.564 0.711-0.692 0.857s-0.255 0.164-0.473 0.055c-0.218-0.109-0.921-0.339-1.753-1.082-0.647-0.577-1.085-1.291-1.213-1.509s-0.014-0.336 0.096-0.445c0.099-0.099 0.218-0.255 0.327-0.382s0.146-0.218 0.218-0.364c0.073-0.146 0.036-0.273-0.018-0.382s-0.491-1.182-0.673-1.618c-0.178-0.424-0.359-0.367-0.491-0.373-0.127-0.006-0.273-0.007-0.418-0.007s-0.382 0.055-0.582 0.273c-0.2 0.218-0.764 0.747-0.764 1.82s0.782 2.111 0.891 2.257c0.109 0.146 1.537 2.347 3.723 3.291 0.52 0.225 0.926 0.359 1.242 0.461 0.523 0.166 0.998 0.143 1.375 0.086 0.419-0.063 1.292-0.528 1.474-1.038s0.182-0.947 0.127-1.038c-0.055-0.091-0.2-0.146-0.418-0.255z" />
+        </svg>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" class="scroll-icon">
+            <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
+    </button>
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+            background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+        }
+
+        .whatsapp-icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 100px;
+            right: 30px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5B8 100%);
+            color: #1a1a2e;
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .scroll-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+            }
+
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-icon {
+                width: 26px;
+                height: 26px;
+            }
+
+            .scroll-to-top {
+                width: 45px;
+                height: 45px;
+                bottom: 80px;
+                right: 20px;
+            }
+
+            .scroll-icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+
     <script src="js/script.js"></script>
+    <script>
+        // Scroll to Top Button Functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
+
 </html>

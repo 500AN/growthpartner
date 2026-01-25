@@ -749,44 +749,44 @@ function scrollToTop() {
 }
 
 // Add scroll to top button
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
     // Create scroll to top button
-    const scrollTopBtn = document.createElement('button');
-    scrollTopBtn.innerHTML = '↑';
-    scrollTopBtn.className = 'scroll-top-btn';
-    scrollTopBtn.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: var(--gradient-accent);
-        color: white;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 1000;
-        box-shadow: var(--shadow-medium);
-    `;
+//     const scrollTopBtn = document.createElement('button');
+//     scrollTopBtn.innerHTML = '↑';
+//     scrollTopBtn.className = 'scroll-top-btn';
+//     scrollTopBtn.style.cssText = `
+//         position: fixed;
+//         bottom: 30px;
+//         right: 30px;
+//         width: 50px;
+//         height: 50px;
+//         border-radius: 50%;
+//         background: var(--gradient-accent);
+//         color: white;
+//         border: none;
+//         font-size: 20px;
+//         cursor: pointer;
+//         opacity: 0;
+//         visibility: hidden;
+//         transition: all 0.3s ease;
+//         z-index: 1000;
+//         box-shadow: var(--shadow-medium);
+//     `;
     
-    scrollTopBtn.addEventListener('click', scrollToTop);
-    document.body.appendChild(scrollTopBtn);
+//     scrollTopBtn.addEventListener('click', scrollToTop);
+//     document.body.appendChild(scrollTopBtn);
     
-    // Show/hide scroll to top button
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-            scrollTopBtn.style.opacity = '1';
-            scrollTopBtn.style.visibility = 'visible';
-        } else {
-            scrollTopBtn.style.opacity = '0';
-            scrollTopBtn.style.visibility = 'hidden';
-        }
-    });
-});
+//     // Show/hide scroll to top button
+//     window.addEventListener('scroll', () => {
+//         if (window.scrollY > 500) {
+//             scrollTopBtn.style.opacity = '1';
+//             scrollTopBtn.style.visibility = 'visible';
+//         } else {
+//             scrollTopBtn.style.opacity = '0';
+//             scrollTopBtn.style.visibility = 'hidden';
+//         }
+//     });
+// });
 
 // ===== WHATSAPP INTEGRATION =====
 function openWhatsApp() {

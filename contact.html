@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Growth Partner</title>
-    <meta name="description" content="Get in touch with Growth Partner. Contact us for business consulting, training, and management solutions. Located in Cochin, India.">
+    <meta name="description"
+        content="Get in touch with Growth Partner. Contact us for business consulting, training, and management solutions. Located in Cochin, India.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <style>
         .faq-columns {
             display: grid;
@@ -16,13 +25,13 @@
             gap: 2rem;
             margin: 3rem auto;
         }
-        
+
         @media (max-width: 768px) {
             .faq-columns {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         .faq-column {
             display: flex;
             flex-direction: column;
@@ -30,6 +39,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Page Loader -->
     <div class="page-loader">
@@ -39,7 +49,10 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
-            <a href="index.html" class="logo">Growth Partner</a>
+            <a href="index.html" class="logo">
+                <img src="images/logo_180 x60.png" alt="Growth Partner" class="logo-img">
+                <!-- <span class="logo-text">Growth Partner</span> -->
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -58,7 +71,8 @@
     <section class="service-hero">
         <div class="container">
             <h1 class="fade-in">Get In <span class="text-gold">Touch</span></h1>
-            <p class="fade-in">Ready to transform your business? Let's discuss how our expertise can drive your success and help you achieve your strategic objectives.</p>
+            <p class="fade-in">Ready to transform your business? Let's discuss how our expertise can drive your success
+                and help you achieve your strategic objectives.</p>
             <div class="hero-description fade-in">
                 <p>Your trusted partner in business transformation and growth.</p>
             </div>
@@ -77,26 +91,32 @@
                     <div class="contact-icon">📍</div>
                     <h3>Our Location</h3>
                     <p><strong>Growth Partner</strong><br>
-                    Address :A-103,Confident Pride,Vattekunnam,Edappally PO,Pin 682024,Kerala<br>
-                    India</p>
+                        Address :A-103,Confident Pride,Vattekunnam,Edappally PO,Pin 682024,Kerala<br>
+                        India</p>
                 </div>
                 <div class="contact-item scale-in">
                     <div class="contact-icon">📞</div>
                     <h3>Phone</h3>
-                    <p><a href="tel:+919876543210" style="color: var(--accent-color); text-decoration: none;">+91 9744762888</a><br>
-                    <small>Available Mon-Fri, 9:00 AM - 6:00 PM IST</small></p>
+                    <p><a href="tel:+919876543210" style="color: var(--accent-color); text-decoration: none;">+91
+                            9744762888</a><br>
+                        <small>Available Mon-Fri, 9:00 AM - 6:00 PM IST</small>
+                    </p>
                 </div>
                 <div class="contact-item scale-in">
                     <div class="contact-icon">✉️</div>
                     <h3>Email</h3>
-                    <p><a href="mailto:info@growthpartnerexperts.com" style="color: var(--accent-color); text-decoration: none;">info@growthpartnerexperts.com</a><br>
-                    <small>We'll respond within 24 hours</small></p>
+                    <p><a href="mailto:info@growthpartnerexperts.com"
+                            style="color: var(--accent-color); text-decoration: none;">info@growthpartnerexperts.com</a><br>
+                        <small>We'll respond within 24 hours</small>
+                    </p>
                 </div>
                 <div class="contact-item scale-in">
                     <div class="contact-icon">💬</div>
                     <h3>WhatsApp</h3>
-                    <p><button onclick="openWhatsApp()" class="btn btn-primary" style="margin-top: 0.5rem;">Chat on WhatsApp</button><br>
-                    <small>Quick responses for urgent inquiries</small></p>
+                    <p><button onclick="openWhatsApp()" class="btn btn-primary" style="margin-top: 0.5rem;">Chat on
+                            WhatsApp</button><br>
+                        <small>Quick responses for urgent inquiries</small>
+                    </p>
                 </div>
             </div>
         </div>
@@ -112,63 +132,71 @@
             <div style="max-width: 800px; margin: 3rem auto;">
                 <div class="contact-form fade-in">
                     <form id="contactForm" action="https://formspree.io/f/mkogqyzd" method="POST">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-        <div class="form-group">
-            <label for="firstName">First Name *</label>
-            <input type="text" id="firstName" name="firstName" required>
-        </div>
-        <div class="form-group">
-            <label for="lastName">Last Name *</label>
-            <input type="text" id="lastName" name="lastName" required>
-        </div>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-        <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="company">Company Name</label>
-        <input type="text" id="company" name="company">
-    </div>
-    <div class="form-group">
-        <label for="service">Service of Interest</label>
-        <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem;">
-            <option value="">Select a service</option>
-            <option value="Travel Industry Training">Travel Industry Training</option>
-            <option value="Representation Company">Representation Company</option>
-            <option value="Sales Assistance">Sales Assistance</option>
-            <option value="Outsourced Sales Tasks">Outsourced Sales Tasks</option>
-            <option value="General Consulting">General Consulting</option>
-            <option value="Other">Other</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" rows="6" required placeholder="Please describe your business needs, challenges, or questions. The more details you provide, the better we can assist you."></textarea>
-    </div>
-    <div class="form-group">
-        <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-            <input type="checkbox" id="newsletter" name="newsletter" value="yes" style="margin: 0;">
-            <span>I would like to receive updates about Growth Partner services and industry insights</span>
-        </label>
-    </div>
-    
-    <!-- Hidden field for form identification -->
-    <input type="hidden" name="_subject" value="New Contact Form Submission - Growth Partner">
-    
-    <!-- Status message container -->
-    <div id="form-status" style="display: none; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; text-align: center;"></div>
-    
-    <div class="form-group" style="text-align: center;">
-        <button type="submit" class="btn btn-primary" style="padding: 1rem 3rem;">Send Message</button>
-    </div>
-</form>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" name="service"
+                                style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem;">
+                                <option value="">Select a service</option>
+                                <option value="Travel Industry Training">Travel Industry Training</option>
+                                <option value="Representation Company">Representation Company</option>
+                                <option value="Sales Assistance">Sales Assistance</option>
+                                <option value="Outsourced Sales Tasks">Outsourced Sales Tasks</option>
+                                <option value="General Consulting">General Consulting</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="Please describe your business needs, challenges, or questions. The more details you provide, the better we can assist you."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes" style="margin: 0;">
+                                <span>I would like to receive updates about Growth Partner services and industry
+                                    insights</span>
+                            </label>
+                        </div>
+
+                        <!-- Hidden field for form identification -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Growth Partner">
+
+                        <!-- Status message container -->
+                        <div id="form-status"
+                            style="display: none; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; text-align: center;">
+                        </div>
+
+                        <div class="form-group" style="text-align: center;">
+                            <button type="submit" class="btn btn-primary" style="padding: 1rem 3rem;">Send
+                                Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -182,22 +210,27 @@
                 <p class="fade-in">Located in the heart of Cochin, Kerala, India</p>
             </div>
             <div class="fade-in" style="margin-top: 3rem;">
-                <div style="background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: var(--shadow-medium); text-align: center;">
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: var(--shadow-medium); text-align: center;">
                     <!-- Embedded Map Placeholder -->
-                    <div style="width: 100%; height: 400px; background: var(--light-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                    <div
+                        style="width: 100%; height: 400px; background: var(--light-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
                         <div style="text-align: center; color: var(--text-light);">
                             <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
                             <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Interactive Map</h3>
                             <p>Cochin, Kerala, India</p>
                             <p style="margin-top: 1rem;">
-                                <a href="https://maps.google.com/?q=Confident Pride" target="_blank" class="btn btn-accent">View on Google Maps</a>
+                                <a href="https://maps.google.com/?q=Confident Pride" target="_blank"
+                                    class="btn btn-accent">View on Google Maps</a>
                             </p>
                         </div>
                     </div>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: left;">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: left;">
                         <div>
                             <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">📍 Address</h4>
-                            <p>Growth Partner<br>A-103,Confident Pride,Vattekunnam, Edappally PO,Pin 682024,Kerala<br>India</p>
+                            <p>Growth Partner<br>A-103,Confident Pride,Vattekunnam, Edappally PO,Pin
+                                682024,Kerala<br>India</p>
                         </div>
                         <div>
                             <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">🕒 Business Hours</h4>
@@ -205,7 +238,8 @@
                         </div>
                         <div>
                             <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">🚗 Getting Here</h4>
-                            <p>Easily accessible by public transport<br>Parking available<br>Near major business districts</p>
+                            <p>Easily accessible by public transport<br>Parking available<br>Near major business
+                                districts</p>
                         </div>
                     </div>
                 </div>
@@ -220,7 +254,7 @@
                 <h2 class="fade-in">Frequently Asked Questions</h2>
                 <p class="fade-in">Everything you need to know about partnering with us for growth</p>
             </div>
-            
+
             <div class="faq-columns">
                 <!-- Left Column (11 questions) -->
                 <div class="faq-column">
@@ -231,7 +265,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-0">
-                            <p>A Growth Partner works with you, not for you. We align strategy, sales, marketing, operations, and leadership to help your business scale sustainably—without chaos, guesswork, or burnout.</p>
+                            <p>A Growth Partner works with you, not for you. We align strategy, sales, marketing,
+                                operations, and leadership to help your business scale sustainably—without chaos,
+                                guesswork, or burnout.</p>
                         </div>
                     </div>
 
@@ -242,7 +278,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-1">
-                            <p>Consultants advise. Growth Partners roll up their sleeves. We stay involved, track execution, course-correct in real time, and measure results. Think of us as an extension of your leadership team.</p>
+                            <p>Consultants advise. Growth Partners roll up their sleeves. We stay involved, track
+                                execution, course-correct in real time, and measure results. Think of us as an extension
+                                of your leadership team.</p>
                         </div>
                     </div>
 
@@ -253,7 +291,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-2">
-                            <p>Our services are ideal for SMEs & growing enterprises, Founders & CXOs, travel, hospitality & service-based businesses, and companies ready to scale but feeling "stuck". If growth is your goal, you're already halfway there.</p>
+                            <p>Our services are ideal for SMEs & growing enterprises, Founders & CXOs, travel,
+                                hospitality & service-based businesses, and companies ready to scale but feeling
+                                "stuck". If growth is your goal, you're already halfway there.</p>
                         </div>
                     </div>
 
@@ -264,7 +304,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-3">
-                            <p>Yes. We bring deep domain experience, especially in travel, tourism, hospitality, and service businesses, while applying proven growth frameworks adaptable across industries.</p>
+                            <p>Yes. We bring deep domain experience, especially in travel, tourism, hospitality, and
+                                service businesses, while applying proven growth frameworks adaptable across industries.
+                            </p>
                         </div>
                     </div>
 
@@ -275,7 +317,10 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-4">
-                            <p>We typically support business & growth strategy, sales process optimization, revenue acceleration, team structuring & leadership alignment, market expansion & partnerships, and process improvement & scalability. Growth is holistic—we don't treat symptoms, we solve root causes.</p>
+                            <p>We typically support business & growth strategy, sales process optimization, revenue
+                                acceleration, team structuring & leadership alignment, market expansion & partnerships,
+                                and process improvement & scalability. Growth is holistic—we don't treat symptoms, we
+                                solve root causes.</p>
                         </div>
                     </div>
 
@@ -286,7 +331,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-5">
-                            <p>Both. We offer strategic advisory engagements, execution-driven retainers, and project-based growth interventions. We'll recommend what fits your business stage—not what inflates invoices.</p>
+                            <p>Both. We offer strategic advisory engagements, execution-driven retainers, and
+                                project-based growth interventions. We'll recommend what fits your business stage—not
+                                what inflates invoices.</p>
                         </div>
                     </div>
 
@@ -297,7 +344,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-6">
-                            <p>Simple: clarity, consistency, and commercial results. We track KPIs, revenue movement, operational efficiency, team alignment, and leadership bandwidth—because growth should feel lighter, not heavier.</p>
+                            <p>Simple: clarity, consistency, and commercial results. We track KPIs, revenue movement,
+                                operational efficiency, team alignment, and leadership bandwidth—because growth should
+                                feel lighter, not heavier.</p>
                         </div>
                     </div>
 
@@ -308,7 +357,8 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-7">
-                            <p>Absolutely. We believe in empowering teams, not replacing them. Your people grow, systems strengthen, and leadership breathes easier.</p>
+                            <p>Absolutely. We believe in empowering teams, not replacing them. Your people grow, systems
+                                strengthen, and leadership breathes easier.</p>
                         </div>
                     </div>
 
@@ -319,7 +369,8 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-8">
-                            <p>100%. Your data, strategies, and discussions are handled with strict confidentiality and professional ethics. Trust is non-negotiable.</p>
+                            <p>100%. Your data, strategies, and discussions are handled with strict confidentiality and
+                                professional ethics. Trust is non-negotiable.</p>
                         </div>
                     </div>
 
@@ -330,7 +381,8 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-9">
-                            <p>Easy. Book a discovery call, we assess your growth stage & challenges, you receive a clear roadmap, and we move forward—together. No pressure. Just progress.</p>
+                            <p>Easy. Book a discovery call, we assess your growth stage & challenges, you receive a
+                                clear roadmap, and we move forward—together. No pressure. Just progress.</p>
                         </div>
                     </div>
 
@@ -341,7 +393,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-10">
-                            <p>Experience. Execution. Empathy. We combine real-world leadership experience, strategic thinking, and hands-on execution—with a human-first approach. Growth without ego. Results without noise.</p>
+                            <p>Experience. Execution. Empathy. We combine real-world leadership experience, strategic
+                                thinking, and hands-on execution—with a human-first approach. Growth without ego.
+                                Results without noise.</p>
                         </div>
                     </div>
                 </div>
@@ -355,7 +409,8 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-11">
-                            <p>Then we'll tell you honestly. Sometimes the best growth move is preparation. When the time is right, we'll be right here.</p>
+                            <p>Then we'll tell you honestly. Sometimes the best growth move is preparation. When the
+                                time is right, we'll be right here.</p>
                         </div>
                     </div>
 
@@ -366,7 +421,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-12">
-                            <p>Yes. We help organizations design smarter interviews, ask the right questions, and identify candidates with the right attitude, aptitude, and cultural fit—beyond just CVs.</p>
+                            <p>Yes. We help organizations design smarter interviews, ask the right questions, and
+                                identify candidates with the right attitude, aptitude, and cultural fit—beyond just CVs.
+                            </p>
                         </div>
                     </div>
 
@@ -377,7 +434,10 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-13">
-                            <p>Absolutely. We prepare fresh graduates to understand interview expectations, communicate confidently, answer behavioral & role-based questions, and present themselves professionally. The goal is simple: reduce interview anxiety and increase employability.</p>
+                            <p>Absolutely. We prepare fresh graduates to understand interview expectations, communicate
+                                confidently, answer behavioral & role-based questions, and present themselves
+                                professionally. The goal is simple: reduce interview anxiety and increase employability.
+                            </p>
                         </div>
                     </div>
 
@@ -388,7 +448,10 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-14">
-                            <p>Our Fresh Graduate Upskilling Program focuses on workplace etiquette & professional communication, business basics & industry orientation, sales, customer handling & problem-solving, time management & accountability, and confidence building & mindset training. We turn degree-holders into job-ready professionals.</p>
+                            <p>Our Fresh Graduate Upskilling Program focuses on workplace etiquette & professional
+                                communication, business basics & industry orientation, sales, customer handling &
+                                problem-solving, time management & accountability, and confidence building & mindset
+                                training. We turn degree-holders into job-ready professionals.</p>
                         </div>
                     </div>
 
@@ -399,7 +462,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-15">
-                            <p>Yes. Training modules can be customized for travel & tourism, hospitality, sales & service industries, and corporate & startup environments. Relevance drives retention—and results.</p>
+                            <p>Yes. Training modules can be customized for travel & tourism, hospitality, sales &
+                                service industries, and corporate & startup environments. Relevance drives retention—and
+                                results.</p>
                         </div>
                     </div>
 
@@ -410,7 +475,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-16">
-                            <p>Yes, and that's where we add the most value. We work with your internal processes, SOPs, and culture to ensure fresh hires ramp up faster, make fewer mistakes, and deliver value sooner. Think of it as shortening the learning curve dramatically.</p>
+                            <p>Yes, and that's where we add the most value. We work with your internal processes, SOPs,
+                                and culture to ensure fresh hires ramp up faster, make fewer mistakes, and deliver value
+                                sooner. Think of it as shortening the learning curve dramatically.</p>
                         </div>
                     </div>
 
@@ -421,7 +488,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-17">
-                            <p>Definitely. We cover verbal & written communication, email & client interaction etiquette, confidence, presentation & body language, and professional mindset & ownership. Skills open doors. Soft skills keep them open.</p>
+                            <p>Definitely. We cover verbal & written communication, email & client interaction
+                                etiquette, confidence, presentation & body language, and professional mindset &
+                                ownership. Skills open doors. Soft skills keep them open.</p>
                         </div>
                     </div>
 
@@ -432,7 +501,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-18">
-                            <p>Highly practical. We use role plays, mock interviews, real-life business scenarios, case discussions, and live feedback sessions. Because theory doesn't survive its first day at work 😉</p>
+                            <p>Highly practical. We use role plays, mock interviews, real-life business scenarios, case
+                                discussions, and live feedback sessions. Because theory doesn't survive its first day at
+                                work 😉</p>
                         </div>
                     </div>
 
@@ -443,7 +514,9 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-19">
-                            <p>Both. Online sessions for distributed teams, onsite workshops for immersive learning, and hybrid models if you want the best of both worlds. Flexible delivery, consistent outcomes.</p>
+                            <p>Both. Online sessions for distributed teams, onsite workshops for immersive learning, and
+                                hybrid models if you want the best of both worlds. Flexible delivery, consistent
+                                outcomes.</p>
                         </div>
                     </div>
 
@@ -454,7 +527,8 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-20">
-                            <p>You get faster onboarding, higher productivity, better client handling, lower attrition, and more confident teams. In short: less firefighting, more growth.</p>
+                            <p>You get faster onboarding, higher productivity, better client handling, lower attrition,
+                                and more confident teams. In short: less firefighting, more growth.</p>
                         </div>
                     </div>
 
@@ -465,7 +539,8 @@
                             <!-- <span class="faq-toggle">+</span> -->
                         </div>
                         <div class="faq-answer" id="contact-faq-21">
-                            <p>Yes—and that's our sweet spot. We align people development with business strategy, ensuring teams grow in the same direction as company goals.</p>
+                            <p>Yes—and that's our sweet spot. We align people development with business strategy,
+                                ensuring teams grow in the same direction as company goals.</p>
                         </div>
                     </div>
                 </div>
@@ -477,7 +552,8 @@
     <section class="contact-cta section">
         <div class="container text-center">
             <h2 class="fade-in">Ready to Start Your Business Transformation?</h2>
-            <p class="fade-in">Don't wait - take the first step toward achieving your business goals today</p>
+            <p class="fade-in" style="color: white;">Don't wait - take the first step toward achieving your business
+                goals today</p>
             <div class="fade-in">
                 <a href="#contact-form" class="btn btn-primary">Send Message</a>
                 <a onclick="openWhatsApp()" class="btn btn-outline">WhatsApp Us</a>
@@ -491,7 +567,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Growth Partner</h3>
-                    <p>Guiding businesses toward smarter growth with comprehensive consulting and management solutions.</p>
+                    <p>Guiding businesses toward smarter growth with comprehensive consulting and management solutions.
+                    </p>
                     <div style="margin-top: 1rem;">
                         <strong>Location:</strong> A-103,Confident Pride,Vattekunnam, Edappally PO ,Pin 682024<br>
                         <strong>Email:</strong> info@growthpartnerexperts.com<br>
@@ -540,9 +617,9 @@
             const faqAnswer = document.getElementById(`contact-faq-${index}`);
             const faqQuestion = faqAnswer.previousElementSibling;
             const faqToggle = faqQuestion.querySelector('.faq-toggle');
-            
+
             const isOpen = faqAnswer.style.display === 'block';
-            
+
             // Close all FAQs
             document.querySelectorAll('.faq-answer').forEach(answer => {
                 answer.style.display = 'none';
@@ -550,7 +627,7 @@
             document.querySelectorAll('.faq-toggle').forEach(toggle => {
                 toggle.textContent = '+';
             });
-            
+
             // If it wasn't open, open it
             if (!isOpen) {
                 faqAnswer.style.display = 'block';
@@ -559,59 +636,208 @@
         }
 
         // Enhanced form submission with status messages
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    const form = e.target;
-    const formStatus = document.getElementById('form-status');
-    const submitButton = form.querySelector('button[type="submit"]');
-    const originalButtonText = submitButton.textContent;
-    
-    // Show loading state
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
-    
-    try {
-        const response = await fetch(form.action, {
-            method: form.method,
-            body: new FormData(form),
-            headers: {
-                'Accept': 'application/json'
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formStatus = document.getElementById('form-status');
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.textContent;
+
+            // Show loading state
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success
+                    formStatus.style.display = 'block';
+                    formStatus.style.backgroundColor = '#d4edda';
+                    formStatus.style.color = '#155724';
+                    formStatus.style.border = '1px solid #c3e6cb';
+                    formStatus.textContent = '✓ Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+                    form.reset();
+                } else {
+                    // Error
+                    formStatus.style.display = 'block';
+                    formStatus.style.backgroundColor = '#f8d7da';
+                    formStatus.style.color = '#721c24';
+                    formStatus.style.border = '1px solid #f5c6cb';
+                    formStatus.textContent = '✗ Oops! There was a problem sending your message. Please try again or contact us directly.';
+                }
+            } catch (error) {
+                // Network error
+                formStatus.style.display = 'block';
+                formStatus.style.backgroundColor = '#f8d7da';
+                formStatus.style.color = '#721c24';
+                formStatus.style.border = '1px solid #f5c6cb';
+                formStatus.textContent = '✗ Connection error. Please check your internet and try again.';
+            } finally {
+                // Reset button
+                submitButton.textContent = originalButtonText;
+                submitButton.disabled = false;
+
+                // Scroll to status message
+                formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         });
-        
-        if (response.ok) {
-            // Success
-            formStatus.style.display = 'block';
-            formStatus.style.backgroundColor = '#d4edda';
-            formStatus.style.color = '#155724';
-            formStatus.style.border = '1px solid #c3e6cb';
-            formStatus.textContent = '✓ Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
-            form.reset();
-        } else {
-            // Error
-            formStatus.style.display = 'block';
-            formStatus.style.backgroundColor = '#f8d7da';
-            formStatus.style.color = '#721c24';
-            formStatus.style.border = '1px solid #f5c6cb';
-            formStatus.textContent = '✗ Oops! There was a problem sending your message. Please try again or contact us directly.';
+    </script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919744762888" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path fill="currentColor"
+                d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.253 1.407 1.42-5.278-0.322-0.532c-1.344-2.225-2.068-4.791-2.068-7.435 0-7.722 6.278-14 14-14s14 6.278 14 14-6.278 14-14 14zM23.187 19.625c-0.218-0.109-1.292-0.638-1.492-0.711s-0.346-0.109-0.491 0.109c-0.146 0.218-0.564 0.711-0.692 0.857s-0.255 0.164-0.473 0.055c-0.218-0.109-0.921-0.339-1.753-1.082-0.647-0.577-1.085-1.291-1.213-1.509s-0.014-0.336 0.096-0.445c0.099-0.099 0.218-0.255 0.327-0.382s0.146-0.218 0.218-0.364c0.073-0.146 0.036-0.273-0.018-0.382s-0.491-1.182-0.673-1.618c-0.178-0.424-0.359-0.367-0.491-0.373-0.127-0.006-0.273-0.007-0.418-0.007s-0.382 0.055-0.582 0.273c-0.2 0.218-0.764 0.747-0.764 1.82s0.782 2.111 0.891 2.257c0.109 0.146 1.537 2.347 3.723 3.291 0.52 0.225 0.926 0.359 1.242 0.461 0.523 0.166 0.998 0.143 1.375 0.086 0.419-0.063 1.292-0.528 1.474-1.038s0.182-0.947 0.127-1.038c-0.055-0.091-0.2-0.146-0.418-0.255z" />
+        </svg>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" class="scroll-icon">
+            <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
+    </button>
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
         }
-    } catch (error) {
-        // Network error
-        formStatus.style.display = 'block';
-        formStatus.style.backgroundColor = '#f8d7da';
-        formStatus.style.color = '#721c24';
-        formStatus.style.border = '1px solid #f5c6cb';
-        formStatus.textContent = '✗ Connection error. Please check your internet and try again.';
-    } finally {
-        // Reset button
-        submitButton.textContent = originalButtonText;
-        submitButton.disabled = false;
-        
-        // Scroll to status message
-        formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-});
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+            background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+        }
+
+        .whatsapp-icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 100px;
+            right: 30px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5B8 100%);
+            color: #1a1a2e;
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .scroll-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+            }
+
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-icon {
+                width: 26px;
+                height: 26px;
+            }
+
+            .scroll-to-top {
+                width: 45px;
+                height: 45px;
+                bottom: 80px;
+                right: 20px;
+            }
+
+            .scroll-icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+
+    <!-- <script src="js/script.js"></script> -->
+    <script>
+        // Scroll to Top Button Functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
+
 </html>
